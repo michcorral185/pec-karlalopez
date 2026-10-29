@@ -1,0 +1,132 @@
+* {
+margin:0;
+padding: 0;
+box-sizing: border-box;
+}
+
+body{
+    font-family: 'arial', sans-serif;
+    background: #e08eeb;
+    color:rgb(29, 30, 31);
+    line-height:1.6;
+}
+
+.titulo-principal{
+    width:100%;
+    text-align:center;
+    padding: 40px 20px;
+    background: transparent;
+}
+
+.titulo-principal h1{
+    font-size:55px;
+    font-weight: 800;
+    letter-spacing: 5px;
+    color:white;
+    text-shadow: 3px 3px 10 px rgba(0,0,0,0,5);
+    margin-bottom: 15px;
+}
+
+main{
+     background-color: #866583;
+    width: 50%;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 4px 10px rgb(222, 121, 215);
+    text-align: center;
+    margin: 20px auto;
+    color: #f0f0f0;
+}
+
+
+.cuadros {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 30px;
+}
+
+.cuadro {
+    background-color: white;
+    padding: 25px;
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
+    transition: all 0.3s ease;
+    border-top: 6px solid #6a4c93;
+}
+
+
+.cuadro:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
+
+.icono {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.cuadro h2 {
+    color: #aa8fcb;
+    font-family: Arial, sans-serif;
+    margin: 10px 0;
+}
+
+.cuadro p {
+    color: #444;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+.menu{
+    display: flex;
+    justify-content: center;
+    gap:10px;
+}
+
+
+.menu button{
+    background-color: rgb(165, 209, 244);
+    color: black;
+    border: none;
+    padding: 8px 18px;
+    margin: 0;
+    border-radius: 8px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.menu button:hover {
+    background-color: #f0f570da;
+}
+
+
+
+div.scroll-container {
+  background-color: #381e3b;
+  overflow-x: auto;
+  overflow-y:hidden;
+  white-space: nowrap;
+  padding: 15px;
+  border-radius: 10px;
+  display:flex;
+  gap:15px;
+  scroll-snap-type: x mandatory;
+}
+
+div.scroll-container img {
+    height: 350px;
+    width: auto;
+    border-radius: 8px;
+    padding:0;
+    scroll-snap-align: center;
+    transition: 0.3s;
+}
+
+
+div.scroll-container img:hover{
+    transform: scale(1.05);
+
+}
+
